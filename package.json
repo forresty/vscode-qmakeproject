@@ -1,0 +1,26 @@
+{
+    "name": "qmakepro",
+    "displayName": "QMakeProject",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "mutan",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "qmakepro",
+            "aliases": ["QMake Project", "qmakepro"],
+            "extensions": [".pro",".pri",".prf"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "qmakepro",
+            "scopeName": "source.qmakepro",
+            "path": "./syntaxes/qmakepro.tmLanguage"
+        }]
+    }
+}
